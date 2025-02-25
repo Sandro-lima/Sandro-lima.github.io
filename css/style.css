@@ -164,6 +164,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
 }
 
 #btn-projects:hover {
@@ -253,10 +254,9 @@
         max-width: 100%;
         line-height: 26px;
     }
+    
+}
 
-    #btn-projects {
-        margin: 20px auto;
-    }
 
     .skills-box {
         flex: 1 1 100%;
@@ -269,4 +269,82 @@
         font-size: 60px;
     }
 
-}
+    #projects-container {
+        margin-top: 20px;
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    #projects-container h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+    
+    #projects-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    #projects-list a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background: linear-gradient(135deg, #007BFF, #0056b3);
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+        display: inline-block;
+    }
+    
+    #projects-list a:hover {
+        background: linear-gradient(135deg, #0056b3, #003d80);
+        transform: scale(1.05);
+    }
+    
+    #projects-container {
+        margin-top: 20px;
+        padding: 20px;
+        background: var(--bio-bg-color);
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    #projects-container h2 {
+        font-size: 24px;
+        color: var(--accent-color);
+        margin-bottom: 15px;
+    }
+    
+    #projects-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    #projects-list a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--main-text-color);
+        background: var(--main-color);
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: 2px solid var(--main-color);
+        transition: all 0.3s ease-in-out;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #projects-list a:hover {
+        background: transparent;
+        color: var(--main-color);
+    }
